@@ -2,18 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/text_margin">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="3">
+        android:layout_height="wrap_content">
 
         <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:id="@+id/profile_frameLayout"
+            android:layout_width="@dimen/profile_image_size"
+            android:layout_height="@dimen/profile_image_size">
 
             <ProgressBar
                 android:id="@+id/progress_spinner"
@@ -25,26 +24,26 @@
                 android:id="@+id/profile_imageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:scaleType="fitXY" />
 
         </FrameLayout>
 
         <TextView
             android:id="@+id/profile_username_textView"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/profile_image_size"
-            android:layout_margin="@dimen/text_margin"
-            android:layout_weight="2"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_toEndOf="@+id/profile_frameLayout"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="3"
-        android:padding="@dimen/default_padding">
+        android:weightSum="3">
 
         <LinearLayout
             android:layout_width="0dp"

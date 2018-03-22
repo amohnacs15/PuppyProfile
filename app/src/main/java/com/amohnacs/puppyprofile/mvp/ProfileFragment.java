@@ -100,7 +100,6 @@ public class ProfileFragment extends MvpFragment<MainPresenter, MvpContract.View
 
         if (adapter != null) {
             adapter.notifyDataSetChanged();
-            showErrorState("");
         }
     }
 
