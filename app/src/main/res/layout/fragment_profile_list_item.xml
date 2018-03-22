@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:id="@+id/progress_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/profile_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/profile_username_textView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/profile_image_size"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_weight="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="@dimen/default_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/default_padding">
+
+            <ImageView
+                android:layout_width="@dimen/badge_circle_size"
+                android:layout_height="@dimen/badge_circle_size"
+                android:scaleType="fitXY"
+                android:src="@drawable/gold_circle" />
+
+            <TextView
+                android:id="@+id/gold_textView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/badge_circle_size"
+                android:gravity="center"
+                android:textColor="@color/gold_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/default_padding">
+
+            <ImageView
+                android:layout_width="@dimen/badge_circle_size"
+                android:layout_height="@dimen/badge_circle_size"
+                android:scaleType="fitXY"
+                android:src="@drawable/silver_circle" />
+
+            <TextView
+                android:id="@+id/silver_textView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/badge_circle_size"
+                android:gravity="center"
+                android:textColor="@color/silver_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/default_padding">
+
+            <ImageView
+                android:layout_width="@dimen/badge_circle_size"
+                android:layout_height="@dimen/badge_circle_size"
+                android:scaleType="fitXY"
+                android:src="@drawable/bronze_circle" />
+
+            <TextView
+                android:id="@+id/bronze_textView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/badge_circle_size"
+                android:gravity="center"
+                android:textColor="@color/bronze_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">PuppyProfile</string>
+    <string name="app_name">PuppyProfiles</string>
+    <string name="action_settings">Settings</string>
 </resources>
