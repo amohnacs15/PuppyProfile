@@ -5,6 +5,7 @@ import android.content.Context;
 import com.amohnacs.common.BasePresenter;
 import com.amohnacs.common.Utils;
 import com.amohnacs.model.Profile;
+import com.amohnacs.puppyprofile.domain.ProfileInteractor;
 
 import java.util.List;
 
@@ -19,11 +20,11 @@ public class MainPresenter extends BasePresenter<MvpContract.View> implements Mv
     private static volatile MainPresenter instance;
 
     private Context context;
-    //private ProfileInteractor interactor;
+    private ProfileInteractor interactor;
 
     private MainPresenter(Context context) {
         this.context = context;
-        //interactor = ProfileInteractor.getInstance(context);
+        interactor = ProfileInteractor.getInstance(context);
     }
 
     public static MainPresenter getInstance(Context context) {
@@ -39,7 +40,7 @@ public class MainPresenter extends BasePresenter<MvpContract.View> implements Mv
 
     @Override
     public void loadProfiles() {
-        //interactor.getRetrofitStandardProfiles(this);
+        interactor.getRetrofitStandardProfiles(this);
     }
 
     @Override

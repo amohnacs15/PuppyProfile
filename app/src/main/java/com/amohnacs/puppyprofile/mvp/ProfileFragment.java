@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.amohnacs.common.MvpFragment;
 import com.amohnacs.model.Profile;
 import com.amohnacs.puppyprofile.R;
+import com.amohnacs.puppyprofile.adapter.ProfileAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,7 +63,7 @@ public class ProfileFragment extends MvpFragment<MainPresenter, MvpContract.View
         // Set the adapter
         if (view instanceof RecyclerView) {
             Context context = view.getContext();
-            //adapter = new ProfileAdapter(profiles, context);
+            adapter = new ProfileAdapter(profiles, context);
 
             RecyclerView recyclerView = (RecyclerView) view;
             if (mColumnCount <= 1) {
