@@ -11,7 +11,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * Created by adrianmohnacs on 3/21/18.
+ * Created by adrianmohnacs on 3/22/18.
  */
 
 public class ProfileInteractor implements MvpContract.Interactor {
@@ -41,6 +41,11 @@ public class ProfileInteractor implements MvpContract.Interactor {
         return instance;
     }
 
+    /**
+     * Using our generated StackExchangeClient a Retrofit call is added to the queue and our results are passed
+     * back down to our activity
+     * @param presenterMvpCallback
+     */
     @Override
     public void getRetrofitStandardProfiles(final MvpCallback presenterMvpCallback) {
 

@@ -3,7 +3,7 @@ package com.amohnacs.model;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by adrianmohnacs on 3/21/18.
+ * Created by adrianmohnacs on 3/22/18.
  */
 
 public class BadgeCount { //badge_count

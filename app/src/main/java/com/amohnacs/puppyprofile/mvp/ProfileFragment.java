@@ -2,6 +2,7 @@ package com.amohnacs.puppyprofile.mvp;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -77,6 +78,7 @@ public class ProfileFragment extends MvpFragment<MainPresenter, MvpContract.View
             recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
         }
         recyclerView.setAdapter(adapter);
+        recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL));
 
         return view;
     }

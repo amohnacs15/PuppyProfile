@@ -9,7 +9,7 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 /**
- * Created by adrianmohnacs on 3/21/18.
+ * Created by adrianmohnacs on 3/22/18.
  */
 
 public interface StackExchangeClient {

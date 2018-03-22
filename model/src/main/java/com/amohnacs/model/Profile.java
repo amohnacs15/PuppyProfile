@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName;
 import org.json.JSONObject;
 
 /**
- * Created by adrianmohnacs on 3/21/18.
+ * Created by adrianmohnacs on 3/22/18.
  */
 
 public class Profile {
