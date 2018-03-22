@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">PuppyProfile</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_contact">Hello</string>
+    <string name="empty_text">An error occured while fetching your puppy profiles</string>
+    <string name="let_us_know_button">What can we do to improve?</string>
+    <string name="bark">WHOOF!</string>
 </resources>

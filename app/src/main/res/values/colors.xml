@@ -10,4 +10,7 @@
     <color name="silver_text">#8c9298</color>
     <color name="bronze">#D1A6A4</color>
     <color name="bronze_text">#c38b5f</color>
+
+    <color name="transperent">@android:color/transparent</color>
+    <color name="white">@android:color/white</color>
 </resources>

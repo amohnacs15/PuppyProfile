@@ -11,7 +11,7 @@ import java.util.List;
 
 
 /**
- * Created by adrianmohnacs on 3/21/18.
+ * Created by adrianmohnacs on 3/22/18.
  */
 
 public class MainPresenter extends BasePresenter<MvpContract.View> implements MvpContract.Presenter, MvpContract.Interactor.MvpCallback {
@@ -43,6 +43,10 @@ public class MainPresenter extends BasePresenter<MvpContract.View> implements Mv
         interactor.getRetrofitStandardProfiles(this);
     }
 
+    /**
+     * Response has been returned and formatted from our interactor
+     * @param profiles
+     */
     @Override
     public void onProfilesRetrieved(List<Profile> profiles) {
         if(!Utils.isEmpty(profiles)) {
@@ -56,6 +60,10 @@ public class MainPresenter extends BasePresenter<MvpContract.View> implements Mv
         }
     }
 
+    /**
+     * Response failed from our interceptor
+     * @param exceptionMessage
+     */
     @Override
     public void onRetrievalFailed(String exceptionMessage) {
         if (isViewAttached()) {

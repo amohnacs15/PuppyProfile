@@ -9,9 +9,14 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by adrianmohnacs on 3/21/18.
+ * Created by adrianmohnacs on 3/22/18.
  */
 
+/**
+ * If we would like to expand on our application and include a number of other APIs or endpoints then
+ * we need a long term way to do that.  By passing in the class of the Client we reduce boilerplate code
+ * and can easily build variations of our Retrofit Clients.
+ */
 public class RetrofitClientGenerator {
     private static final String TAG = RetrofitClientGenerator.class.getSimpleName();
 
@@ -40,9 +45,7 @@ public class RetrofitClientGenerator {
 
     private static GsonConverterFactory buildGsonConverter() {
         GsonBuilder gsonBuilder = new GsonBuilder();
-        //gsonBuilder.registerTypeAdapter(ProfileItems.class, new ProfileItemDeserializer())
-            //.setDateFormat("yyyy-MM-dd'T'HH:mm:ssz")
-            gsonBuilder.serializeNulls();
+        gsonBuilder.serializeNulls();
 
         Gson myGson = gsonBuilder.create();
 

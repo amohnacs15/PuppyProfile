@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.amohnacs.puppyprofile.R;
 
 /**
- * Created by adrianmohnacs on 3/21/18.
+ * Created by adrianmohnacs on 3/22/18.
  */
 
 public class ViewHolder extends RecyclerView.ViewHolder {
@@ -41,7 +41,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     void setProgressLoading(boolean isLoading) {
         progressBar.setVisibility(isLoading ? View.VISIBLE : View.GONE);
     }
-
 
     void setGravatarImageView(Bitmap imageBitmap) {
         gravatarImageView.setImageBitmap(imageBitmap);

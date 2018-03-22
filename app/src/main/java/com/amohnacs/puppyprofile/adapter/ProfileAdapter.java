@@ -48,11 +48,9 @@ public class ProfileAdapter extends RecyclerView.Adapter<ViewHolder> {
 
         if (profile != null) {
 
-
             Glide.with(context)
                     .load(profile.getProfileImage())
                     .into(betterTargetnew);
-
 
             holder.setDisplayTextView(profile.getDisplayName());
 

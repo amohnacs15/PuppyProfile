@@ -6,12 +6,12 @@ import com.amohnacs.model.Profile;
 import java.util.List;
 
 /**
- * Created by adrianmohnacs on 3/21/18.
+ * Created by adrianmohnacs on 3/22/18.
  */
 
 public interface MvpContract {
 
-    // TODO: 3/21/18 interactor or provider?
+    // TODO: 3/22/18 interactor or provider?
     interface Interactor {
 
         void getRetrofitStandardProfiles(MvpCallback mvpCallback);
