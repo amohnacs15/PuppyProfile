@@ -5,4 +5,5 @@
     <dimen name="profile_image_size">64dp</dimen>
     <dimen name="badge_circle_size">16dp</dimen>
     <dimen name="default_padding">16dp</dimen>
+    <dimen name="empty_imageView">64dp</dimen>
 </resources>
