@@ -4,4 +4,12 @@
     <string name="empty_text">An error occured while fetching your puppy profiles</string>
     <string name="let_us_know_button">What can we do to improve?</string>
     <string name="bark">WHOOF!</string>
+    <string name="title_activity_zzzzzzzzzz">zzzzzzzzzz</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="thank_you">Thank you for the opportunity to develop an app for Wag Labs, Inc.  Please let me know if you have any questions, comments, or concerns.</string>
+    <string name="my_name">- Adrian Mohnacs</string>
 </resources>
