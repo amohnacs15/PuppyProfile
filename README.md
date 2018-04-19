@@ -12,3 +12,5 @@ If we wanted to do this on our own we would need to build and manage our own asy
 #### Glide
 
 Again, Glide handles caching and converting our json response into a usable object.  If we wanted to implement our own image caching we would save the seriealized bitmap value and store in an SQLiteDatabase along with other user information.  On our initial request to get user data and image data we would check our cache first.  If it's not empty then we get our data locally and BitmapFactory decodes our byte array into a Bitmap.
+
+![screenshot_20180322-213350](https://user-images.githubusercontent.com/7444521/39014949-af9d9e2a-43d0-11e8-8800-d93a171b193d.png)
